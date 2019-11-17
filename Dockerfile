@@ -1,7 +1,7 @@
 FROM resin/rpi-raspbian:latest
 MAINTAINER Søren Schmidt Kriegbaum "comzone5@gmail.com"
 #RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" >> /etc/apt/sources.list
-#upgrade da versao php5 para php7.1
+
 
 RUN apt-get -y update 
 
