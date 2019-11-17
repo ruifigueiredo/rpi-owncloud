@@ -23,7 +23,7 @@ RUN echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee
 RUN sudo apt-get update
 
 
-RUN apt-get install -y supervisor apache2 php7.2 php7.2-gd php-xml-parser php7.2-intl php7.2-sqlite mysql-server-5.5 smbclient curl libcurl3 php7.2-mysql php7.2-curl bzip2 wget vim openssl ssl-cert sharutils
+RUN apt-get install -y supervisor apache2 php7.2-zip php7.2-xml php7.2 php7.2-gd php-xml-parser php7.2-intl php7.2-sqlite mysql-server-5.5 smbclient curl libcurl3 php7.2-mysql php7.2-curl bzip2 wget vim openssl ssl-cert sharutils
 
 RUN wget -q -O - http://download.owncloud.org/community/owncloud-latest.tar.bz2 | tar jx -C /var/www/;chown -R www-data:www-data /var/www/owncloud
 
